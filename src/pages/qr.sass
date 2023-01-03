@@ -1,0 +1,30 @@
+$primary: hsl(0, 0%, 100%)
+$secondary: hsl(212, 45%, 89%)
+$gray: hsl(220, 15%, 55%)
+$dark: hsl(218, 44%, 22%)
+$card_radius: 23px
+$small: 300px
+$medium: 900px
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=DM+Serif+Display&family=Outfit:wght@400;700&display=swap')
+body
+    font-size: 15px
+    font-family: 'DM Sans', sans-serif
+    font-family: 'DM Serif Display', serif
+    font-family: 'Outfit', sans-serif
+.card
+    width: 375px
+    background-color: $primary
+    border-radius: $card_radius
+    padding: 1rem
+.card__image
+    border-radius: $card_radius
+.card__title
+    color: $dark
+    font-size: 1.7rem
+    line-height: 1.9rem
+.card__subtitle
+    color: $gray
+    font-size: 1.2rem
+    line-height: 1.3rem
+.card__footer
+    padding: 12px
