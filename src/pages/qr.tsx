@@ -1,17 +1,25 @@
 import './qr.sass';
 import QRImage from '../assets/qr_images/image-qr-code.webp';
 import Mobile_QRImage from '../assets/qr_images/image-qr-code.png';
+import { Link } from 'react-router-dom';
 const QR = () => {
   return (
     <article className="card">
       <header className="card__header">
-        <img
-          src={QRImage}
-          width="100%"
-          alt=""
-          className="card__image"
-          srcSet={`${Mobile_QRImage} 300w, ${QRImage} 500w`}
-        />
+        <Link
+          target={'_blank'}
+          to={
+            'https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H'
+          }
+        >
+          <img
+            src={QRImage}
+            width="100%"
+            alt=""
+            className="card__image"
+            srcSet={`${Mobile_QRImage} 300w, ${QRImage} 500w`}
+          />
+        </Link>
       </header>
       <footer className="card__footer">
         <h2 className="card__title">
