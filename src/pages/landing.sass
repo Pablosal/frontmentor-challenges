@@ -5,16 +5,30 @@
     animation-timing-function: ease-in-out
     margin-left: 30px
     margin-top: 5px
-    font-size: 5rem
-.landing__paragraph
-    max-width: 500px
-    font-size: 1.2rem
-    line-height: 2rem
-.landing__subtitle
-    font-size: 3rem
+    font-size: 2.8rem
+    @media (min-width: 800px)
+        font-size: 5rem
 .landing__paragraph-container
     display: grid
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr
+    @media (min-width: 800px)
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: none
+
+.landing__paragraph
+    max-width: 500px
+    font-size: .8rem
+    line-height: 1rem
+    text-align: justify
+    @media (min-width: 800px)
+        margin: 0 10px
+        font-size: 1.2rem
+        line-height: 2rem
+        text-align: center
+.landing__subtitle
+    font-size: 3rem
+    line-height: 2.8rem
+    @media (min-width: 800px)
 
 @keyframes floating
     0%
