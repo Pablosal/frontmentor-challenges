@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './pages/landing';
 import React from 'react';
+import LoadingComponent from './components/loading_component/loading_component';
 const QR = React.lazy(() => import('./pages/qr'));
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           <Route
             path="QR-challenge"
             element={
-              <React.Suspense fallback={<>...</>}>
+              <React.Suspense fallback={<LoadingComponent />}>
                 <QR />
               </React.Suspense>
             }
