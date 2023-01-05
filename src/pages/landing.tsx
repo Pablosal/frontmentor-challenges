@@ -1,3 +1,4 @@
+import CardTag from '../components/card_tag/card_tag';
 import ChallengeCard from '../components/challenge_card/challenge_card';
 import './landing.sass';
 const Landing = () => {
@@ -27,7 +28,28 @@ const Landing = () => {
         </p>
       </div>
       <h3 className="landing__subtitle">Challenges Completed</h3>
-      <ChallengeCard proyect_name="QR Card"  path='QR-challenge'/>
+      <div className="landing__challenges">
+        <ChallengeCard
+          proyect_name="QR Card"
+          path="QR-challenge"
+          render={() => (
+            <>
+              <CardTag text="Single Item" backgroundColor="#9A275A"></CardTag>
+              <CardTag text="Easy Peasy" backgroundColor="#06d6a0"></CardTag>
+            </>
+          )}
+        />
+        <ChallengeCard
+          proyect_name="Multi Step Form"
+          path="multi-form-challenge"
+          render={() => (
+            <>
+              <CardTag text="Responsive" backgroundColor="#006C67"></CardTag>
+              <CardTag text="Intermediate" backgroundColor="#FFB100"></CardTag>
+            </>
+          )}
+        />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,18 @@
+@import src\utils\vars\variables.sass
+@mixin step-button
+    height: 60px
+    border-radius: 7px
+    &:hover
+        border: none
+
+.step-button__container
+    display: flex
+    justify-content: space-between
+    padding: 20px 40px
+.step-button-primary
+    @include step-button
+    background-color: $marine_blue
+.step-button-secondary
+    @include step-button
+    background: transparent
+    color: $marine_blue
