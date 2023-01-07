@@ -37,7 +37,7 @@ const useStep = () => {
   }, [step]);
 
   function nextStep() {
-    if (step < 5) setStep((step) => step +1);
+    if (step < 4) setStep((step) => step +1);
   }
   function prevStep() {
     if (step > 1) setStep((step) => step -1);

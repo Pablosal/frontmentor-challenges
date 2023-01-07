@@ -5,17 +5,26 @@ body
 .form__container
     background-color: $white
     border-radius: 23px
-    height: 80vh
-    min-width: 50vw
-    padding: 10px
+    max-width: 1188px
+    width: 1188px
+    padding: 20px
     display: grid
-    grid-template-columns: 2fr 3fr
+    @media screen and (min-width:800px)
+        grid-template-columns: .8fr 2fr
+        height: 76vh
 .form__sidebar
-    border-radius: 23px
+    border-radius: 11px
     background: url("../assets/multi_form_images/bg-sidebar-desktop.svg") no-repeat center center local
     background-size: cover
-    height: 80vh
     background-color: $pastel_blue
+    @media screen and (min-width:800px)
+        height: 80vh
+        max-height: 715px
+        width: 344px
+
 .form__content
     display: grid
     grid-template-rows: 1fr 5fr 1fr
+    overflow: hidden
+    @media screen and (min-width:800px)
+        padding: 5rem 8.063rem 0rem 8.063rem

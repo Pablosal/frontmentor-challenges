@@ -1,7 +1,7 @@
 import './step_title.sass';
 interface IStepTitle {
-  title: string;
-  subtitle: string;
+  title?: string;
+  subtitle?: string;
 }
 const StepTitle = ({ subtitle, title }: IStepTitle) => {
   return (
