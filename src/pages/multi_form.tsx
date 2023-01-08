@@ -47,7 +47,7 @@ const MultiFormPage = () => {
         <div className="content">
           <MultiFormContent step={step} />
         </div>
-        <StepButtons nextStep={nextStep} prevStep={prevStep} />
+        <StepButtons step={step} nextStep={nextStep} prevStep={prevStep} />
       </main>
     </div>
   );

@@ -1,9 +1,17 @@
 const Summary = () => {
   return (
     <article className="summary_container">
-      <header></header>
-      <main></main>
-      <footer></footer>
+      <main>
+
+        <div>
+          
+        </div>
+        <div></div>
+      </main>
+      <footer>
+        <span>Total (per year)</span>
+        <span>$120/yr</span>
+      </footer>
     </article>
   );
 };
