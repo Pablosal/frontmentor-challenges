@@ -5,6 +5,10 @@
   border-radius: 31px;
   font-family: sv.$base_font;
   font-size: sv.$font_base_size;
+  @media screen and (min-width: sv.$mobile_view) and (max-width: sv.$desktop_view) {
+    flex-direction: column;
+  }
+  flex-direction: row;
   &--side {
     border-radius: 31px;
     min-height: 514px;
@@ -12,12 +16,14 @@
     background: rgb(120, 87, 255);
     background: linear-gradient(180deg, #6743ff 0%, #322bea 100%);
     border-radius: 31px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 44px;
     padding-bottom: 60px;
+    @media screen and (min-width: sv.$mobile_view) and (max-width: sv.$desktop_view) {
+      min-height: 355px;
+    }
     &--title {
       color: sv.$light_lavender;
     }
