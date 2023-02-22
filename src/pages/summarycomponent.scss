@@ -10,14 +10,12 @@
     min-height: 514px;
     min-width: 369px;
     background: rgb(120, 87, 255);
-    background: linear-gradient(
-      sv.$light_slate_blue 0%,
-      sv.$light_royal_blue 100%
-    );
+    background: linear-gradient(180deg, #6743ff 0%, #322bea 100%);
+    border-radius: 31px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 36px;
     padding-top: 44px;
     padding-bottom: 60px;
     &--title {
@@ -30,17 +28,18 @@
     border-radius: 50%;
     background: rgb(78, 33, 202);
     background: linear-gradient(
-      350deg,
-      sv.$violet_blue 0%,
-      sv.$persian_blue 100%
+      180deg,
+      #4c21c8 64.69%,
+      rgba(71, 52, 240, 0.53) 100%
     );
     margin-bottom: 35px;
   }
   &--description {
-    padding: 16px;
+    padding: 16px 34px;
     &--title {
       color: black;
       text-align: start;
+      margin-top: 52px;
     }
     &--button {
       width: 100%;
@@ -48,7 +47,7 @@
       min-height: 55px;
       margin-top: 42px;
       &:hover {
-        background: linear-gradient(sv.$persian_blue 0%, sv.$violet_blue 100%);
+        background: linear-gradient(180deg, #6542ff 0%, #332de9 100%);
       }
     }
   }
@@ -57,8 +56,9 @@
     flex-direction: column;
     justify-content: center;
     &__top {
-      font-size: 3rem;
+      font-size: 4rem;
       margin-top: 25px;
+      margin-bottom: 10px;
       font-weight: 700;
     }
     &__bottom {
@@ -68,6 +68,7 @@
     }
     &--title {
       margin: 0;
+      font-size: 2rem;
     }
     &--paragraph {
       color: sv.$light_lavender;

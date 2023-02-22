@@ -22,7 +22,9 @@ const SummaryTooltip = ({
         <span className="summaryTooltip--title">{title}</span>
       </div>
       <div className="summaryTooltip--score">
-        {score.current}/{score.total}
+        {score.current}
+
+        <span className="summaryTooltip--score__darker"> / {score.total}</span>
       </div>
     </div>
   );
