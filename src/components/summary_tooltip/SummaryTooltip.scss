@@ -1,0 +1,42 @@
+@use '../../sass/globals/variables/summary_variables' as sv;
+.summaryTooltip {
+  min-width: 287px;
+  min-height: 55px;
+  border-radius: 11px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  margin-bottom: 14px;
+  font-family: sv.$base_font;
+  font-size: sv.$font_base_size;
+  &--first {
+    display: flex;
+    img {
+      margin-right: 16px;
+    }
+  }
+  &--red {
+    background-color: sv.$light_red_ha;
+    color: sv.$light_red;
+    font-weight: 700;
+  }
+  &--orange {
+    background-color: sv.$orangey_yellow_ha;
+    color: sv.$orangey_yellow;
+    font-weight: 700;
+  }
+  &--green {
+    background-color: sv.$green_teal_ha;
+    color: sv.$green_teal;
+    font-weight: 700;
+  }
+  &--blue {
+    background-color: sv.$colbalt_blue_ha;
+    color: sv.$colbalt_blue;
+    font-weight: 700;
+  }
+  &--score {
+    color: black;
+  }
+}

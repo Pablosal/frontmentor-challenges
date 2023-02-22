@@ -1,0 +1,76 @@
+@use '../sass/globals/variables/summary_variables' as sv;
+.summary {
+  display: flex;
+  background-color: white;
+  border-radius: 31px;
+  font-family: sv.$base_font;
+  font-size: sv.$font_base_size;
+  &--side {
+    border-radius: 31px;
+    min-height: 514px;
+    min-width: 369px;
+    background: rgb(120, 87, 255);
+    background: linear-gradient(
+      sv.$light_slate_blue 0%,
+      sv.$light_royal_blue 100%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 36px;
+    padding-top: 44px;
+    padding-bottom: 60px;
+    &--title {
+      color: sv.$light_lavender;
+    }
+  }
+  &--score {
+    height: 197px;
+    width: 197px;
+    border-radius: 50%;
+    background: rgb(78, 33, 202);
+    background: linear-gradient(
+      350deg,
+      sv.$violet_blue 0%,
+      sv.$persian_blue 100%
+    );
+    margin-bottom: 35px;
+  }
+  &--description {
+    padding: 16px;
+    &--title {
+      color: black;
+      text-align: start;
+    }
+    &--button {
+      width: 100%;
+      border-radius: 28px;
+      min-height: 55px;
+      margin-top: 42px;
+      &:hover {
+        background: linear-gradient(sv.$persian_blue 0%, sv.$violet_blue 100%);
+      }
+    }
+  }
+  &--score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__top {
+      font-size: 3rem;
+      margin-top: 25px;
+      font-weight: 700;
+    }
+    &__bottom {
+      margin: 10px;
+      font-size: 1rem;
+      color: sv.$light_lavender;
+    }
+    &--title {
+      margin: 0;
+    }
+    &--paragraph {
+      color: sv.$light_lavender;
+    }
+  }
+}

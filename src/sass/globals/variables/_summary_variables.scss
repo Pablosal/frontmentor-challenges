@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=DM+Serif+Display&family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&display=swap');
+$mobile_view: 375px;
+$desktop_view: 1440px;
+
+// ## Colors
+
+// ### Primary
+$light_red_ha: hsla(0, 100%, 67%, 0.1);
+$light_red: hsl(0, 100%, 67%);
+$orangey_yellow_ha: hsl(39, 100%, 56%, 0.1);
+$orangey_yellow: hsl(39, 100%, 56%);
+$green_teal_ha: hsla(166, 100%, 37%, 0.1);
+$green_teal: hsl(166, 100%, 37%);
+$colbalt_blue_ha: hsla(234, 85%, 45%, 0.1);
+$colbalt_blue: hsl(234, 85%, 45%);
+
+// ## Gradients
+$light_slate_blue: #7857ff;
+$light_royal_blue: #2e2be9;
+// ## Circle
+$violet_blue: #4e21ca;
+$persian_blue: #2421ca00;
+
+// ### Neutral
+$white: hsl(0, 0%, 100%);
+$pale_blue: hsl(221, 100%, 96%);
+$light_lavender: hsl(241, 100%, 89%);
+$dark_gray_blue: hsl(224, 30%, 27%);
+
+// ## Typography
+
+// ### Body Copy
+$font_base_size: 18px;
+
+// ### Font
+
+$base_font: 'Hanken Grotesk', sans-serif;
+// - Family: [Hanken Grotesk](https://fonts.google.com/specimen/Hanken+Grotesk)
+// - Weights: 500, 700, 800
