@@ -27,7 +27,13 @@ const Landing = () => {
         </p>
       </div>
       <h3 className="landing__subtitle">Challenges Completed</h3>
-      <ChallengeCard proyect_name="QR Card"  path='QR-challenge'/>
+      <div className="landing__cardsContainer">
+        <ChallengeCard proyect_name="QR Card" path="QR-challenge" />
+        <ChallengeCard
+          proyect_name="Summary Main Component"
+          path="summary-challenge"
+        />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,84 @@
+@use '../sass/globals/variables/summary_variables' as sv;
+.summary {
+  display: flex;
+  background-color: white;
+  border-radius: 31px;
+  font-family: sv.$base_font;
+  font-size: sv.$font_base_size;
+  @media screen and (min-width: sv.$mobile_view) and (max-width: sv.$desktop_view) {
+    flex-direction: column;
+  }
+  flex-direction: row;
+  &--side {
+    border-radius: 31px;
+    min-height: 514px;
+    min-width: 369px;
+    background: rgb(120, 87, 255);
+    background: linear-gradient(180deg, #6743ff 0%, #322bea 100%);
+    border-radius: 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 44px;
+    padding-bottom: 60px;
+    @media screen and (min-width: sv.$mobile_view) and (max-width: sv.$desktop_view) {
+      min-height: 355px;
+    }
+    &--title {
+      color: sv.$light_lavender;
+    }
+  }
+  &--score {
+    height: 197px;
+    width: 197px;
+    border-radius: 50%;
+    background: rgb(78, 33, 202);
+    background: linear-gradient(
+      180deg,
+      #4b20c7 0%,
+      #442de0 53.65%,
+      #4734ee 100%
+    );
+    margin-bottom: 35px;
+  }
+  &--description {
+    padding: 16px 34px;
+    &--title {
+      color: black;
+      text-align: start;
+      margin-top: 52px;
+    }
+    &--button {
+      width: 100%;
+      border-radius: 28px;
+      min-height: 55px;
+      margin-top: 42px;
+      &:hover {
+        background: linear-gradient(180deg, #6542ff 0%, #332de9 100%);
+      }
+    }
+  }
+  &--score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__top {
+      font-size: 4rem;
+      margin-top: 25px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    &__bottom {
+      margin: 10px;
+      font-size: 1rem;
+      color: sv.$light_lavender;
+    }
+    &--title {
+      margin: 0;
+      font-size: 2rem;
+    }
+    &--paragraph {
+      color: sv.$light_lavender;
+    }
+  }
+}
