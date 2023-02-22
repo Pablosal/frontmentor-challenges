@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  front:
+    build: ./
+    volumes:
+      - ./:/app
+    ports:
+      - 5173:5173
+    container_name: frontchallenge-front
