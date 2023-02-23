@@ -34,8 +34,8 @@ function App() {
               <React.Suspense fallback={<LoadingComponent />}>
                 <ProyectLayout
                   Component={<Summary />}
-                  source="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"
-                  source_description="Summary component"
+                  source="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV"
+                  source_description="Results summary component"
                 ></ProyectLayout>
               </React.Suspense>
             }
