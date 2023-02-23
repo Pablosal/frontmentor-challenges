@@ -1,4 +1,7 @@
 import ChallengeCard from '../components/challenge_card/challenge_card';
+// import summaryImageM from '../assets/summary_images/mobile-design.jpg';
+import summaryImageD from '../assets/summary_images/desktop-design.webp';
+import qrImageM from '../assets/qr_images/mobile-design.webp';
 import './landing.sass';
 const Landing = () => {
   return (
@@ -28,8 +31,13 @@ const Landing = () => {
       </div>
       <h3 className="landing__subtitle">Challenges Completed</h3>
       <div className="landing__cardsContainer">
-        <ChallengeCard proyect_name="QR Card" path="QR-challenge" />
         <ChallengeCard
+          image={qrImageM}
+          proyect_name="QR Card"
+          path="QR-challenge"
+        />
+        <ChallengeCard
+          image={summaryImageD}
           proyect_name="Summary Main Component"
           path="summary-challenge"
         />

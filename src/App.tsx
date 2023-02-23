@@ -3,8 +3,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './pages/landing';
 import React from 'react';
 import LoadingComponent from './components/loading_component/loading_component';
+import Topbar from './components/topbar/Topbar';
 const QR = React.lazy(() => import('./pages/qr'));
 const Summary = React.lazy(() => import('./pages/summarycomponent'));
+const ProyectLayout = React.lazy(
+  () => import('./components/proyect_layout/ProyectLayout')
+);
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +20,7 @@ function App() {
             path="QR-challenge"
             element={
               <React.Suspense fallback={<LoadingComponent />}>
-                <QR />
+                <ProyectLayout Component={<QR />}></ProyectLayout>
               </React.Suspense>
             }
           />
@@ -23,7 +28,7 @@ function App() {
             path="summary-challenge"
             element={
               <React.Suspense fallback={<LoadingComponent />}>
-                <Summary />
+                <ProyectLayout Component={<Summary />}></ProyectLayout>
               </React.Suspense>
             }
           />
