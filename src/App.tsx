@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './pages/landing';
 import React from 'react';
 import LoadingComponent from './components/loading_component/loading_component';
+import AdvicePage from './pages/advice';
 const QR = React.lazy(() => import('./pages/qr'));
 const Summary = React.lazy(() => import('./pages/summarycomponent'));
 const ProyectLayout = React.lazy(
@@ -35,6 +36,18 @@ function App() {
                   Component={<Summary />}
                   source="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV"
                   source_description="Results summary component"
+                ></ProyectLayout>
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="advice-challenge"
+            element={
+              <React.Suspense fallback={<LoadingComponent />}>
+                <ProyectLayout
+                  Component={<AdvicePage />}
+                  source="https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db/hub"
+                  source_description="Advice Generator"
                 ></ProyectLayout>
               </React.Suspense>
             }

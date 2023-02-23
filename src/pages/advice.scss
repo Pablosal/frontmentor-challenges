@@ -1,0 +1,36 @@
+@use '../sass/globals/variables/advice_variables' as av;
+.advice--card {
+  @media screen and (min-width: av.$desktop_view) {
+    height: 224px;
+    width: 539px;
+  }
+  width: 100vw;
+  height: 437px;
+  padding-top: 50px;
+  padding-bottom: 78px;
+  position: relative;
+  background: av.$dark_grayish_blue;
+  border-radius: 15px;
+  font-family: av.$base_font;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  &--header {
+    letter-spacing: 0.395em;
+    color: av.$neon_green;
+  }
+  &--separator {
+    background-image: url('../assets/advice_images/pattern-divider-desktop.svg');
+    background-position: center;
+    height: 16px;
+    width: 82.5%;
+  }
+  &--content {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+blockquote {
+  min-height: 60%;
+}

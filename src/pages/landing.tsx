@@ -2,6 +2,7 @@ import ChallengeCard from '../components/challenge_card/challenge_card';
 // import summaryImageM from '../assets/summary_images/mobile-design.jpg';
 import summaryImageD from '../assets/summary_images/desktop-design.webp';
 import qrImageM from '../assets/qr_images/mobile-design.webp';
+import adviceImageM from '../assets/advice_images/mobile-design.jpg';
 import './landing.sass';
 const Landing = () => {
   return (
@@ -40,6 +41,11 @@ const Landing = () => {
           image={summaryImageD}
           proyect_name="Summary Main Component"
           path="summary-challenge"
+        />
+        <ChallengeCard
+          image={adviceImageM}
+          proyect_name="Advice generator app"
+          path="advice-challenge"
         />
       </div>
     </div>
