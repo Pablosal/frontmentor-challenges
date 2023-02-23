@@ -4,16 +4,24 @@ import './challenge_card.sass';
 interface IChallengeCard {
   proyect_name: string;
   path: string;
+  image: string;
 }
-const ChallengeCard = ({ proyect_name, path }: IChallengeCard) => {
+const ChallengeCard = ({ proyect_name, path, image }: IChallengeCard) => {
   return (
-    <article className="challenge_card">
-      <h3 className="challenge_card__title">{proyect_name}</h3>
-      <div className="challenge_card__footer">
+    <article className="challenge--card">
+      <h3 className="challenge--card__title">{proyect_name}</h3>
+      <div className="challenge--card__imageContainer">
+        <img
+          className="challenge--card__image"
+          src={image}
+          alt={proyect_name}
+        />
+      </div>
+      <div className="challenge--card__footer">
+        <CardTag text="Image to code" backgroundColor="#06d6a0"></CardTag>
         <CardTag text="Single Item" backgroundColor="#9A275A"></CardTag>
-        <CardTag text="Easy Peasy" backgroundColor="#06d6a0"></CardTag>
-        <Link className="challenge_card__button" to={path}>
-          {' '}
+        <br />
+        <Link className="challenge--card__button" to={path}>
           See Proyect
         </Link>
       </div>

@@ -1,0 +1,12 @@
+.modal {
+  width: 50vw;
+  height: 50vh;
+  background-color: rgba($color: #f5f5f5, $alpha: 1);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 40;
+}

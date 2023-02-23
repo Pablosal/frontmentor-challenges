@@ -5,6 +5,10 @@ import React from 'react';
 import LoadingComponent from './components/loading_component/loading_component';
 const QR = React.lazy(() => import('./pages/qr'));
 const Summary = React.lazy(() => import('./pages/summarycomponent'));
+const ProyectLayout = React.lazy(
+  () => import('./components/proyect_layout/ProyectLayout')
+);
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +19,11 @@ function App() {
             path="QR-challenge"
             element={
               <React.Suspense fallback={<LoadingComponent />}>
-                <QR />
+                <ProyectLayout
+                  Component={<QR />}
+                  source="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"
+                  source_description="QR code component"
+                ></ProyectLayout>
               </React.Suspense>
             }
           />
@@ -23,7 +31,11 @@ function App() {
             path="summary-challenge"
             element={
               <React.Suspense fallback={<LoadingComponent />}>
-                <Summary />
+                <ProyectLayout
+                  Component={<Summary />}
+                  source="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV"
+                  source_description="Results summary component"
+                ></ProyectLayout>
               </React.Suspense>
             }
           />

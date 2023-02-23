@@ -1,6 +1,6 @@
-.challenge_card
+.challenge--card
     min-height: 250px
-    height: 350px
+    min-height: 350px
     mas-height: 450px
     display: flex
     justify-content: flex-end
@@ -8,15 +8,18 @@
     border-radius: 23px
     background-color: hsl(0deg, 0%, 20%)
     max-width: 375px
+    &__image
+        height: 250px
+        margin: 20px 0px
 
-.challenge_card__footer
+.challenge--card__footer
     height: 40%
     margin-bottom: 1rem
     padding: 1rem
     background-color: rgba(100,100 ,100 ,0.7 )
-.challenge_card__title
+.challenge--card__title
     flex-grow: 1
-.challenge_card__button
+.challenge--card__button
     position: relative
     display: inline-block
     border-radius: 6px
