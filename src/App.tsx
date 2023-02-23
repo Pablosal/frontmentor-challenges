@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Landing from './pages/landing';
 import React from 'react';
 import LoadingComponent from './components/loading_component/loading_component';
-import Topbar from './components/topbar/Topbar';
 const QR = React.lazy(() => import('./pages/qr'));
 const Summary = React.lazy(() => import('./pages/summarycomponent'));
 const ProyectLayout = React.lazy(

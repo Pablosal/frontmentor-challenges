@@ -1,9 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Topbar.scss';
-import ImageGallery from 'react-image-gallery';
-import Backdrop from '../backdrop/Backdrop';
-import Modal from '../modal/Modal';
 interface TopbarProps {
   source: string;
   source_description: string;
