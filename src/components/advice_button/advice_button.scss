@@ -1,0 +1,21 @@
+@use '../../sass/globals/variables/advice_variables' as av;
+
+$button_size: 64px;
+.advice--button {
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: $button_size;
+  height: $button_size;
+  border-radius: 50%;
+  background-color: av.$neon_green;
+  &:hover {
+    box-shadow: 0px 0px 25px av.$neon_green;
+  }
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
