@@ -2,14 +2,17 @@ import * as React from 'react';
 import Topbar from '../topbar/Topbar';
 interface ProyectLayoutProps {
   Component: React.ReactNode;
+  source: string;
+  source_description: string;
 }
-const ProyectLayout = ({ Component }: ProyectLayoutProps) => {
+const ProyectLayout = ({
+  Component,
+  source,
+  source_description,
+}: ProyectLayoutProps) => {
   return (
     <div>
-      <Topbar
-        source="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"
-        source_description="QR code component"
-      ></Topbar>
+      <Topbar source={source} source_description={source_description} />
       {Component}
     </div>
   );

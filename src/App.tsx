@@ -20,7 +20,11 @@ function App() {
             path="QR-challenge"
             element={
               <React.Suspense fallback={<LoadingComponent />}>
-                <ProyectLayout Component={<QR />}></ProyectLayout>
+                <ProyectLayout
+                  Component={<QR />}
+                  source="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"
+                  source_description="QR code component"
+                ></ProyectLayout>
               </React.Suspense>
             }
           />
@@ -28,7 +32,11 @@ function App() {
             path="summary-challenge"
             element={
               <React.Suspense fallback={<LoadingComponent />}>
-                <ProyectLayout Component={<Summary />}></ProyectLayout>
+                <ProyectLayout
+                  Component={<Summary />}
+                  source="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"
+                  source_description="Summary component"
+                ></ProyectLayout>
               </React.Suspense>
             }
           />
