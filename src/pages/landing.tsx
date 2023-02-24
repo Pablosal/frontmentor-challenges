@@ -4,6 +4,46 @@ import summaryImageD from '../assets/summary_images/desktop-design.webp';
 import qrImageM from '../assets/qr_images/mobile-design.webp';
 import adviceImageM from '../assets/advice_images/mobile-design.jpg';
 import './landing.sass';
+import CardTag from '../components/card_tag/card_tag';
+
+const proyects = [
+  {
+    id: crypto.randomUUID(),
+    image: qrImageM,
+    proyect_name: 'QR Card',
+    path: 'QR-challenge',
+    cardTags: (
+      <>
+        <CardTag text="Image to code" backgroundColor="#06d6a0" />
+        <CardTag text="Single Item" backgroundColor="#9A275A" />
+      </>
+    ),
+  },
+  {
+    id: crypto.randomUUID(),
+    image: summaryImageD,
+    proyect_name: 'Summary Main Component',
+    path: 'summary-challenge',
+    cardTags: (
+      <>
+        <CardTag text="Image to code" backgroundColor="#06d6a0" />
+        <CardTag text="Single Item" backgroundColor="#9A275A" />
+      </>
+    ),
+  },
+  {
+    id: crypto.randomUUID(),
+    image: adviceImageM,
+    proyect_name: 'Advice generator app',
+    path: 'advice-challenge',
+    cardTags: (
+      <>
+        <CardTag text="Image to code" backgroundColor="#06d6a0" />
+        <CardTag text="Single Item" backgroundColor="#9A275A" />
+      </>
+    ),
+  },
+];
 const Landing = () => {
   return (
     <div className="landing__container">
@@ -32,21 +72,15 @@ const Landing = () => {
       </div>
       <h3 className="landing__subtitle">Challenges Completed</h3>
       <div className="landing__cardsContainer">
-        <ChallengeCard
-          image={qrImageM}
-          proyect_name="QR Card"
-          path="QR-challenge"
-        />
-        <ChallengeCard
-          image={summaryImageD}
-          proyect_name="Summary Main Component"
-          path="summary-challenge"
-        />
-        <ChallengeCard
-          image={adviceImageM}
-          proyect_name="Advice generator app"
-          path="advice-challenge"
-        />
+        {proyects.map((proyect) => (
+          <ChallengeCard
+            key={proyect.id}
+            cardTags={proyect.cardTags}
+            image={proyect.image}
+            proyect_name={proyect.proyect_name}
+            path={proyect.path}
+          />
+        ))}
       </div>
     </div>
   );
