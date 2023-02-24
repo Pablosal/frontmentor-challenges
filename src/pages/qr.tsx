@@ -6,11 +6,12 @@ const QR = () => {
   return (
     <article className="card">
       <header className="card__header">
-        <Link
+        <a
           target={'_blank'}
-          to={
+          href={
             'https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H'
           }
+          rel="noreferrer"
         >
           <img
             src={QRImage}
@@ -19,7 +20,7 @@ const QR = () => {
             className="card__image"
             srcSet={`${Mobile_QRImage} 300w, ${QRImage} 500w`}
           />
-        </Link>
+        </a>
       </header>
       <footer className="card__footer">
         <h2 className="card__title">

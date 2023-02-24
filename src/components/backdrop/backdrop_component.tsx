@@ -7,7 +7,7 @@ interface BackdropProps {
 const BackdropBody = ({ closeModal }: BackdropProps) => {
   return <div className="backdrop" onClick={closeModal}></div>;
 };
-
+// Naming
 const Backdrop = ({ closeModal }: BackdropProps) => {
   return createPortal(
     <BackdropBody closeModal={closeModal} />,

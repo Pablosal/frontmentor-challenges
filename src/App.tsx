@@ -5,9 +5,9 @@ import React from 'react';
 import LoadingComponent from './components/loading_component/loading_component';
 import AdvicePage from './pages/advice';
 const QR = React.lazy(() => import('./pages/qr'));
-const Summary = React.lazy(() => import('./pages/summarycomponent'));
+const Summary = React.lazy(() => import('./pages/summary_component'));
 const ProyectLayout = React.lazy(
-  () => import('./components/proyect_layout/ProyectLayout')
+  () => import('./components/proyect_layout/proyect_layout')
 );
 
 function App() {

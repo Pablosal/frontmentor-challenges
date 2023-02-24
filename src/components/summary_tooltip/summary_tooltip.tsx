@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './SummaryTooltip.scss';
+import './summary_tooltip.scss';
 interface SummaryTooltipProps {
   icon: string;
   title: string;
