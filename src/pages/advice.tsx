@@ -1,14 +1,12 @@
 import * as React from 'react';
 import AdviceButton from '../components/advice_button/advice_button';
-// import
 import './advice.scss';
-interface adviceProps {}
 
 type Advice = {
-  id: String;
-  advice: String;
+  id: string;
+  advice: string;
 };
-const AdvicePage = ({}: adviceProps) => {
+const AdvicePage = () => {
   const [advice, setAdvice] = React.useState<Advice>();
   async function getAdvice() {
     fetch('https://api.adviceslip.com/advice')
@@ -23,7 +21,7 @@ const AdvicePage = ({}: adviceProps) => {
     <main className="advice--card">
       <span className="advice--card--header"> ADVICE #{advice.id}</span>
       <blockquote>
-        <p className="advice--card--content">"{advice.advice}</p>
+        <p className="advice--card--content">&ldquo;{advice.advice}&rdquo;</p>
       </blockquote>
       <div className="advice--card--separator"></div>
       <AdviceButton handleClick={getAdvice} />

@@ -3,10 +3,9 @@ import ReactionIcon from '../assets/summary_images/icon-reaction.svg';
 import MemoryIcon from '../assets/summary_images/icon-memory.svg';
 import VerbalIcon from '../assets/summary_images/icon-verbal.svg';
 import VisualIcon from '../assets/summary_images/icon-visual.svg';
-import SummaryTooltip from '../components/summary_tooltip/SummaryTooltip';
-import './summarycomponent.scss';
-interface summaryComponentProps {}
-const SummaryComponent = ({}: summaryComponentProps) => {
+import SummaryTooltip from '../components/summary_tooltip/summary_tooltip';
+import './summary_component.scss';
+const SummaryComponent = () => {
   return (
     <main className="summary">
       <div className="summary--side">

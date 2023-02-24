@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Topbar from '../topbar/Topbar';
+import Topbar from '../topbar/topbar_component';
 interface ProyectLayoutProps {
   Component: React.ReactNode;
   source: string;

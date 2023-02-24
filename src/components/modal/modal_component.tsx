@@ -4,6 +4,7 @@ import './modal.scss';
 interface ModalProps {
   children: React.ReactNode;
 }
+// hola
 
 const ModalBody = ({ children }: ModalProps) => {
   return <div className="modal">{children}</div>;
@@ -11,7 +12,7 @@ const ModalBody = ({ children }: ModalProps) => {
 
 const Modal = ({ children }: ModalProps) => {
   return createPortal(
-    <ModalBody children={children} />,
+    <ModalBody>{children}</ModalBody>,
     document.getElementById('modal') as HTMLElement
   );
 };
