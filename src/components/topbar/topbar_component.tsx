@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './topbar.scss';
+import './topbar_component.scss';
 interface TopbarProps {
   source: string;
   source_description: string;
